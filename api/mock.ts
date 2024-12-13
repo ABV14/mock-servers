@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default (req: VercelRequest, res: VercelResponse) => {
-  fs.readFile(path.join(__dirname, '../data/sales_data.json.json'), 'utf8', (err, data) => {
+  fs.readFile(path.join(__dirname, '../data/sales_data.json'), 'utf8', (err, data) => {
     if (err) {
       return res.status(500).json({ error: 'Failed to read data' });
     }
