@@ -1,14 +1,15 @@
 {
+    "version": 2,
     "builds": [
       {
-        "src": "api/mock.ts",
-        "use": "@vercel/node"
+        "src": "api/mock.ts", 
+        "use": "@vercel/node"  
       }
     ],
     "routes": [
       {
-        "src": "/api/mock",
-        "dest": "/api/mock.ts"
+        "src": "/api/mock", 
+        "dest": "/api/mock.ts" 
       }
     ]
   }
